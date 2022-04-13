@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DANG KY - LAP 8 </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="eight.js"></script>
+</head>
+<body>
+    <form id="form1">
+      <h2>ĐĂNG KÝ THÀNH VIÊN</h2>
+      <p>
+        <label>Mã sinh viên</label><br>
+        <input id="masv" type="text" class="txt">
+      </p>
+      <p>
+        <label>Họ và tên</label><br>
+        <input id="hoten" type="text" class="txt">
+      </p>
+      <p>
+        <label>Email</label><br>
+        <input id="email" type="email" class="txt">
+      </p>
+      <p>
+        <fieldset id="fs1">
+          <legend>Giới tính</legend>
+          <input type="radio" name="gioitinh" value="Nam"><label>Nam</label>
+          <input type="radio" name="gioitinh" value="Nu"><label>Nữ</label><br>
+        </fieldset>
+      </p>
+      <p>
+        <fieldset id="fs2">
+          <legend>Sở thích</legend>
+          <input type="checkbox" name="st"><label>Đọc sách</label>
+          <input type="checkbox" name="st"><label>Du lịch</label>
+          <input type="checkbox" name="st"><label>Ẩm thực</label>
+          <input type="checkbox" name="st"><label>Âm nhạc</label>
+          <input type="checkbox" name="st"><label>Khác</label>
+        </fieldset>
+      </p>
+      <p>
+        <label>Quốc tịch</label>
+        <select id="quoctich" name="quoctich" class="txt">
+          <option value="0">Chọn quốc gia</option>
+          <option value="1">Việt Nam</option>
+          <option value="2">Hàn Quốc</option>
+          <option value="3">Trung Quốc</option>
+        </select>
+      </p>
+      <p>
+        <label>Ghi chú</label>
+        <textarea id="ghichu" cols="54" rows="5" class="txt"></textarea>
+      </p>
+      <div id="baoloi"></div>
+      <button type="button" onclick="kiemtra();" id="dangki">Đăng kí</button>
+    </form>
+</body>
+</html>
